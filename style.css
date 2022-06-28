@@ -1,8 +1,6 @@
 *{
     font-family: 'Anton', sans-serif;
 }
-
-
 .bg-col{
     background:#000;
     box-shadow: 2px 2px 5px #000;
@@ -46,6 +44,7 @@
 .background-overlay{
     background: rgba(255, 159, 67,.4);
     min-height: 600px;
+    box-shadow: 2px 2px 5px rgba(255, 159, 67,.4);
 
 }
 .title__h2{
@@ -53,13 +52,34 @@
     width: 100%;
     margin: 10px 0 40px 0;
     background-color:#000000d5;
+    
 }
+
 .title__h2-container{
     box-sizing: border-box;
     color:  #f75f07;
     font-size:3vw;
     width: 100%;
     padding: 10px;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: cambiarOolor 6s 1 forwards;
+}
+@keyframes cambiarOolor{
+    0%{
+         transform: translateX(-30%);
+    } 
+
+     50%{
+        transform: translateX(30%);
+    }
+
+    100%{
+        transform: translateX(0%);
+
+    }
+
+
 }
 .text-decoration{
     text-decoration: none;
@@ -75,6 +95,21 @@
     font-size: 80px;
     color: #f75f07;
     background: #000;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: cambiarPosition 6s 1 forwards;
+}
+@keyframes cambiarPosition{
+    0%{
+         transform: translateY(-30%);
+    } 
+
+    100%{
+        transform: translateY(0%);
+
+    }
+
+
 }
 
 .container__gird{
@@ -161,20 +196,19 @@
     border: 3px solid #fff;
 }
 .article__4{ 
-    grid-row:4 / 6 ;
-    grid-column:1 / 6 ;
+    grid-row:4 / 5 ;
+    grid-column:1 / 5 ;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid #600;
-    background:linear-gradient(to top,#fff,transparent);
+    border: 2px solid #000;
     padding: 50px;
     margin: 30px;
 }
 .article__p4{
     color: #d30000;
-    font-size: 3em;
+    font-size: 2em;
 
 }
 .img__article-4{
@@ -207,8 +241,196 @@
     border: 3px solid #fff;
 }
 
+/*MODELOS.HTML*/
+.backg-img{
+    background: url(./multimedia/imagenes/1366_2000.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background-overlay-1{
+    background: rgba(0, 0, 0, 0.706);
+    height: 550px;
+}
+
+.article__naked{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:200px 200px 200px;
+
+}
+.article__naked-h2{
+color: #fff;
+  background-color: #000;
+  text-align: center;
+  font-size: 10vw;
+  grid-column:1 / 3;
+  grid-row:1 / 2 ;
+}
+.article__naked-p{
+    color: #fff;
+    text-align: center;
+    font-size:1.9vw;
+    grid-column:3 / 5;
+    grid-row:1 / 4;
+}
+
+.article__naked iframe{
+    width: 100%;
+    grid-column:1 / 3;
+    grid-row:2 / 3;
+    border-bottom: 3px solid #f75f07;
+}
+/*aca articulo adventure*/
+
+.backg-img_2{
+    background: url(./multimedia/imagenes/ktmadventure.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background-overlay-2{
+    background: rgba(110, 68, 6, 0.7);
+
+}
+
+.article__adventure{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:200px 200px ;
+}
+.article__adventure-h2{
+    background-color: #000;
+    text-align: center;
+    font-size: 10vw;
+    color:rgba(255, 153, 0, 0.7) ;
+    grid-column:1 / 5 ;
+    grid-row:1 / 2 ;
+
+}
+.article__adventure-p{
+    color: #fff;
+    font-size:1.9vw;
+    padding: 10px;
+    grid-column:1 / 3 ;
+    grid-row:2 / 5 ;
+}
+.article__adventure iframe{
+    width: 100%;
+    border-bottom: 3px solid #f75f07;
+    grid-column:3 / 5 ;
+    grid-row:2 / 5;
+}
+
+/*desde aca supersport*/
+.backg-img_3{
+    background: url(./multimedia/imagenes/ktmsuperspot.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background-overlay-3{
+    background: rgba(240, 130, 5, 0.705);
+
+}
+.article__supersport{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:200px 200px;
+
+}
+.article__supersport-h2{
+    color: hsl(24, 100%, 50%);
+    background-color: #000;
+    text-align: center;
+    font-size: 10vw;
+    grid-column:1 / 3;
+    grid-row:1 / 2 ;
+  
+  }
+  .article__supersport-p{
+    color: #fff;
+    font-size:1.9vw;
+    padding: 10px;
+    grid-column:1 / 3 ;
+    grid-row:2 / 3 ;
+}
+.article__supersport iframe{
+    width: 100%;
+    border-bottom: 3px solid #f75f07;
+    grid-column:3 / 5 ;
+    grid-row:1 / 3;
+}
+
+/*desde aca enduro*/
+.backg-img_4{
+    background: url(./multimedia/imagenes/croosfull.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background-overlay-4{
+    background: rgba(5, 21, 240, 0.705);
+
+}
+.article__enduro{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:200px 200px 200px;
+
+}
+.article__enduro-h2{
+    color: hwb(241 0% 0%);
+    background-color: #000;
+    text-align: center;
+    font-size: 10vw;
+    grid-column:1 / 3;
+    grid-row:1 / 2 ;
+  
+  }
+  .article__enduro-p{
+    color: #fff;
+    font-size:1.9vw;
+    padding: 10px;
+    grid-column:3 / 5 ;
+    grid-row:1 / 5 ;
+}
+.article__enduro iframe{
+    width: 100%;
+    border-bottom: 3px solid #f75f07;
+    grid-column:1 / 3;
+    grid-row:2 / 4;
+}
+
+/*desde aca media*/
+@media only screen and (max-width:870px){
+    .article__adventure{
+        display: block;
+    }
+    .article__naked{
+        display: block;
+    }
+
+    .article__enduro{
+        display: block;
+    }
+    .article__supersport{
+        display: block;
+    }
+    .header__modelos{
+        display: none;
+    }
+    
+    
+}
 
 
+/*accesorios.html*/
+@media only screen and(max-width:780px){
+    .servicio-fila{
+        width: 100% !important;
+    }
+    
+}
 /*footer*/
 .p-footer{
     color: #f75f07;
