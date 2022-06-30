@@ -425,6 +425,15 @@ color: #fff;
 
 
 /*accesorios.html*/
+
+.bg-img{
+    background: url(./multimedia/imagenes/backgroud.jpg);
+    background-size:contain;
+    background-repeat:repeat;
+}
+.bg-color{
+    background: rgba(105, 105, 105, 0.7);
+}
 @media only screen and(max-width:780px){
     .servicio-fila{
         width: 100% !important;
