@@ -1,0 +1,404 @@
+* {
+  font-family: "Anton", sans-serif;
+}
+
+/*nav*/
+.bg-col {
+  background: #000;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.nav-a {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: 20px;
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 980px) {
+  .nav-a {
+    font-size: 20px;
+  }
+}
+.nav-a:hover {
+  color: #ff7504;
+}
+
+#button {
+  background-color: #f75f07;
+}
+
+.img__nav {
+  width: 70px;
+  height: 70px;
+}
+
+/*header*/
+.main-header {
+  background: url(../multimedia/imagenes/backgroud.jpg);
+  background-size: cover;
+  min-height: 600px;
+}
+.main-header .background-overlay {
+  background: rgba(255, 159, 67, 0.4);
+  min-height: 600px;
+  box-shadow: 2px 2px 5px rgba(255, 159, 67, 0.4);
+}
+.main-header .h1__bg {
+  color: #000;
+}
+
+/*contenido*/
+.title__h2 {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0 40px 0;
+  background-color: rgba(0, 0, 0, 0.8352941176);
+}
+.title__h2 .title__h2-container {
+  box-sizing: border-box;
+  color: #f75f07;
+  font-size: 3vw;
+  width: 100%;
+  padding: 10px;
+}
+
+.carousel-inner .img__carousel {
+  width: 700px;
+  height: 500px;
+}
+
+/*noticas*/
+.h1__noticia {
+  text-align: center;
+  padding: 30px;
+  font-size: 80px;
+  color: #f75f07;
+  background: #000;
+}
+
+.container__gird {
+  display: grid;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(1000px);
+}
+@media only screen and (max-width: 500px) {
+  .container__gird {
+    display: block;
+  }
+}
+.container__gird .article__1 {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #fff, transparent);
+  margin: 30px;
+}
+.container__gird .article__1 .article__p1 {
+  font-size: 1em;
+  margin: 10px;
+}
+.container__gird .article__1 .img__article-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container__gird .article__2 {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000;
+  background: linear-gradient(to bottom, #fff, transparent);
+  padding: 50px;
+  margin: 30px;
+}
+.container__gird .article__2 .article__p2 {
+  font-size: 1em;
+  margin: 10px;
+}
+.container__gird .article__2 .img__article-2 {
+  width: 60%;
+  height: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.container__gird .article__3 {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000;
+  background: linear-gradient(to top, #fff, transparent);
+  padding: 50px;
+  margin: 30px;
+}
+.container__gird .article__3 .article__p3 {
+  font-size: 1em;
+  margin: 10px;
+}
+.container__gird .article__3 .img__article-3 {
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.container__gird .article__4 {
+  grid-row: 4/5;
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 50px;
+  margin: 30px;
+}
+.container__gird .article__4 .article__p4 {
+  color: #d30000;
+  font-size: 2em;
+}
+.container__gird .article__4 .img__article-4 {
+  width: 90%;
+  height: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.container__gird .article__5 {
+  grid-row: 2/4;
+  grid-column: 3/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000;
+  background: linear-gradient(to top, rgb(216, 207, 207), transparent);
+  margin: 30px;
+}
+.container__gird .article__p5 {
+  font-size: 2em;
+  margin: 10px;
+}
+.container__gird .img__article-5 {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/*MODELOSS*/
+.backg-img {
+  background: url(../multimedia/imagenes/1366_2000.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.backg-img .background-overlay-1 {
+  background: rgba(0, 0, 0, 0.706);
+  height: 550px;
+}
+.backg-img .background-overlay-1 .article__naked {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+}
+@media only screen and (max-width: 500px) {
+  .backg-img .background-overlay-1 .article__naked {
+    display: block;
+  }
+}
+.backg-img .background-overlay-1 .article__naked .article__naked-h2 {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  font-size: 10vw;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.backg-img .background-overlay-1 .article__naked .article__naked-p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.9vw;
+  grid-column: 3/5;
+  grid-row: 1/4;
+}
+@media only screen and (max-width: 500px) {
+  .backg-img .background-overlay-1 .article__naked .article__naked-p {
+    font-size: 4vw;
+  }
+}
+.backg-img .background-overlay-1 .article__naked .article__naked-iframe {
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border-bottom: 3px solid #f75f07;
+}
+
+.backg-img_2 {
+  background: url(./multimedia/imagenes/ktmadventure.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.backg-img_2 .background-overlay-2 {
+  background: rgba(110, 68, 6, 0.7);
+}
+.backg-img_2 .background-overlay-2 .article__adventure {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
+.backg-img_2 .background-overlay-2 .article__adventure .article__adventure-h2 {
+  background-color: #000;
+  text-align: center;
+  font-size: 10vw;
+  color: rgba(255, 153, 0, 0.7);
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+.backg-img_2 .background-overlay-2 .article__adventure .article__adventure-p {
+  color: #fff;
+  font-size: 1.9vw;
+  padding: 10px;
+  grid-column: 1/3;
+  grid-row: 2/5;
+}
+@media only screen and (max-width: 500px) {
+  .backg-img_2 .background-overlay-2 .article__adventure .article__adventure-p {
+    font-size: 4vw;
+  }
+}
+.backg-img_2 .background-overlay-2 .article__adventure .article__adventure-iframe {
+  width: 100%;
+  border-bottom: 3px solid #f75f07;
+  grid-column: 3/5;
+  grid-row: 2/5;
+}
+
+.backg-img_3 {
+  background: url(./multimedia/imagenes/ktmsuperspot.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.backg-img_3 .background-overlay-3 {
+  background: rgba(240, 130, 5, 0.705);
+}
+.backg-img_3 .background-overlay-3 .article__supersport {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
+.backg-img_3 .background-overlay-3 .article__supersport .article__supersport-h2 {
+  color: hsl(24deg, 100%, 50%);
+  background-color: #000;
+  text-align: center;
+  font-size: 10vw;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.backg-img_3 .background-overlay-3 .article__supersport .article__supersport-p {
+  color: #fff;
+  font-size: 1.9vw;
+  padding: 10px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+@media only screen and (max-width: 500px) {
+  .backg-img_3 .background-overlay-3 .article__supersport .article__supersport-p {
+    font-size: 3vw;
+  }
+}
+.backg-img_3 .background-overlay-3 .article__supersport .article__supersport-iframe {
+  width: 100%;
+  border-bottom: 3px solid #f75f07;
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+
+.backg-img_4 {
+  background: url(./multimedia/imagenes/croosfull.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.backg-img_4 .background-overlay-4 {
+  background: rgba(5, 21, 240, 0.705);
+}
+.backg-img_4 .background-overlay-4 .article__enduro {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+}
+.backg-img_4 .background-overlay-4 .article__enduro .article__enduro-h2 {
+  color: hwb(241 0% 0%);
+  background-color: #000;
+  text-align: center;
+  font-size: 10vw;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.backg-img_4 .background-overlay-4 .article__enduro .article__enduro-p {
+  color: #fff;
+  font-size: 1.9vw;
+  padding: 10px;
+  grid-column: 3/5;
+  grid-row: 1/5;
+}
+@media only screen and (max-width: 500px) {
+  .backg-img_4 .background-overlay-4 .article__enduro .article__enduro-p {
+    font-size: 4vw;
+  }
+}
+.backg-img_4 .background-overlay-4 .article__enduro .article__enduro-iframe {
+  width: 100%;
+  border-bottom: 3px solid #f75f07;
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+.bg-img {
+  background: url(../multimedia/imagenes/backgroud.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: space;
+}
+.bg-img .bg-color {
+  background: rgba(105, 105, 105, 0.3);
+}
+
+footer {
+  border: 2px solid #f75f07;
+  margin-top: 30px;
+}
+footer .p-footer {
+  color: #f75f07;
+  font-size: 2.5vw;
+}
+footer .text-decoration {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+}
+footer .text-decoration:hover {
+  color: #f75f07;
+}
+footer .text-decoration .text-decoration i {
+  font-size: 2vw;
+}
+
+/*# sourceMappingURL=style.css.map */
