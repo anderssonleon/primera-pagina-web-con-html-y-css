@@ -1,0 +1,66 @@
+
+/*nav*/
+    .bg-col{
+        background:#000;
+        box-shadow: 2px 2px 5px #000;
+    }
+    .nav-a{
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: 20px;
+        font-weight: var(--bs-nav-link-font-weight);
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        transition:.5s;
+        @media only screen and(max-width:980px){
+                font-size: 20px;
+        }
+        &:hover{
+            color: #ff7504;
+        }
+}
+#button {
+    background-color: #f75f07;
+}
+.img__nav{
+    width:70px;
+    height: 70px;
+
+}
+/*header*/
+.main-header{
+    background: url(../multimedia/imagenes/backgroud.jpg);
+    background-size:cover;
+    min-height: 600px;
+    .background-overlay{
+        background: rgba(255, 159, 67,.4);
+        min-height: 600px;
+        box-shadow: 2px 2px 5px rgba(255, 159, 67,.4);
+    
+    }
+    .h1__bg{
+        color: #000;
+    }
+}
+/*contenido*/
+.title__h2{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 40px 0;
+    background-color:#000000d5;
+    .title__h2-container{
+        box-sizing: border-box;
+        color:  #f75f07;
+        font-size:3vw;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.carousel-inner{
+    .img__carousel{
+        width: 700px;
+        height: 500px;
+    }
+}

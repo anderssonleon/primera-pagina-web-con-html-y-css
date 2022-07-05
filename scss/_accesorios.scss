@@ -1,0 +1,10 @@
+.bg-img{
+    background: url(../multimedia/imagenes/backgroud.jpg);
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+    background-repeat: space;
+    .bg-color{
+        background: rgba(105, 105, 105, 0.3);
+    }
+}
