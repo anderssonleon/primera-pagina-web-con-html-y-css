@@ -1,8 +1,11 @@
 
 /*nav*/
+
+@import '../base/mapas';
+
     .bg-col{
         background:#000;
-        box-shadow: 2px 2px 5px #000;
+        box-shadow: 2px 2px 5px #002;
     }
     .nav-a{
         display: block;
@@ -33,14 +36,55 @@
     background: url(../multimedia/imagenes/backgroud.jpg);
     background-size:cover;
     min-height: 600px;
+    .location-fa i{
+        position:fixed;
+        font-size: 50px;
+        color:rgba(71, 78, 85, 0.7);
+        transition: .2;
+        &:hover{
+            color: #000;
+        }
+     }
+     /*MAPS GET*/
     .background-overlay{
-        background: rgba(255, 159, 67,.4);
+        background:map-get($standard , bg-standard);
         min-height: 600px;
-        box-shadow: 2px 2px 5px rgba(255, 159, 67,.4);
-    
+        box-shadow: map-get($standard , bx-shadow);
+                 
+    }
+    .container__animation{
+        animation:photoText 4s 1;
+        @keyframes photoText{
+            0%{
+                transform:translateX(-100%);
+                opacity: .1;
+             }            
+
+             100%{
+                transform:translateX(0%);
+                opacity: .9;
+             }
+         }
     }
     .h1__bg{
         color: #000;
+    }
+    .img__header{
+         width:500px;
+         border-radius: 10%;
+         border:2px solid #000;
+         animation:photoBiker 4s 1;
+         @keyframes photoBiker{
+            0%{
+                transform:translateX(-100%);
+                opacity: .1;
+             }            
+
+             100%{
+                transform:translateX(0%);
+                opacity: .9;
+             }
+         }
     }
 }
 /*contenido*/

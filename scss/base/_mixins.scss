@@ -1,0 +1,9 @@
+@mixin background ($valor, $valor2) {
+    background-repeat:$valor;
+    background-size:$valor2;
+
+
+    @if $valor, $valor2 == no-repeat {
+        border:2px solid #000;
+    }
+}
