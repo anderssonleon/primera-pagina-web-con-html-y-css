@@ -1,10 +1,14 @@
 
 *{
     font-family: 'Anton', sans-serif;
-}
-@import 'home';
-@import 'noticias';
-@import 'modelos'; 
-@import 'accesorios';
-@import 'footer'
+ }
+
+@import 'carpetas/home';
+@import 'carpetas/noticias';
+@import 'carpetas/modelos'; 
+@import 'carpetas/accesorios';
+@import 'carpetas/footer';
+
+
+
         

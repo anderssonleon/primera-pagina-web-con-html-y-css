@@ -1,8 +1,10 @@
 /*MODELOSS*/
+@import '../base/mixins';
+
 .backg-img{
     background: url(../multimedia/imagenes/1366_2000.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    @include background(no-repeat, 100% 100%);
+     }
     .background-overlay-1{
         background: rgba(0, 0, 0, 0.706);
         height: 550px;
@@ -10,6 +12,7 @@
             display:grid;
             grid-template-columns:1fr 1fr 1fr 1fr ;
             grid-template-rows:200px 200px 200px;
+            
             @media only screen and (max-width:500px){
                 display: block;
             }
@@ -41,12 +44,11 @@
         }
     }
 
-}
+
 
 .backg-img_2{
-    background: url(./multimedia/imagenes/ktmadventure.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url(../multimedia/imagenes/ktmadventure.jpg);
+    @include background(no-repeat, 100% 100%);
     .background-overlay-2{
         background: rgba(110, 68, 6, 0.7);
         .article__adventure{
@@ -86,9 +88,8 @@
 }
 
 .backg-img_3{
-    background: url(./multimedia/imagenes/ktmsuperspot.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url(../multimedia/imagenes/ktmsuperspot.jpg);
+    @include background(no-repeat, 100% 100%);
     .background-overlay-3{
         background: rgba(240, 130, 5, 0.705);
         .article__supersport{
@@ -127,9 +128,8 @@
     }
 }
 .backg-img_4{
-    background: url(./multimedia/imagenes/croosfull.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url(../multimedia/imagenes/croosfull.jpg);
+    @include background(no-repeat, 100% 100%);
     .background-overlay-4{
         background: rgba(5, 21, 240, 0.705);
         .article__enduro{

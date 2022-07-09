@@ -5,7 +5,7 @@
 /*nav*/
 .bg-col {
   background: #000;
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 2px 2px 5px #002;
 }
 
 .nav-a {
@@ -41,14 +41,53 @@
   background: url(../multimedia/imagenes/backgroud.jpg);
   background-size: cover;
   min-height: 600px;
+  /*MAPS GET*/
+}
+.main-header .location-fa i {
+  position: fixed;
+  font-size: 50px;
+  color: rgba(71, 78, 85, 0.7);
+  transition: 0.2;
+}
+.main-header .location-fa i:hover {
+  color: #000;
 }
 .main-header .background-overlay {
   background: rgba(255, 159, 67, 0.4);
   min-height: 600px;
   box-shadow: 2px 2px 5px rgba(255, 159, 67, 0.4);
 }
+.main-header .container__animation {
+  animation: photoText 4s 1;
+}
+@keyframes photoText {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0.9;
+  }
+}
 .main-header .h1__bg {
   color: #000;
+}
+.main-header .img__header {
+  width: 500px;
+  border-radius: 10%;
+  border: 2px solid #000;
+  animation: photoBiker 4s 1;
+}
+@keyframes photoBiker {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0.9;
+  }
 }
 
 /*contenido*/
@@ -72,6 +111,11 @@
 }
 
 /*noticas*/
+.container__gird .article__5, .container__gird .article__4, .container__gird .article__3, .container__gird .article__2 {
+  border: 1px solid #000;
+  border-radius: 2%;
+}
+
 .h1__noticia {
   text-align: center;
   padding: 30px;
@@ -119,7 +163,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #000;
   background: linear-gradient(to bottom, #fff, transparent);
   padding: 50px;
   margin: 30px;
@@ -141,7 +184,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #000;
   background: linear-gradient(to top, #fff, transparent);
   padding: 50px;
   margin: 30px;
@@ -163,7 +205,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid #000;
   padding: 50px;
   margin: 30px;
 }
@@ -184,7 +225,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #000;
   background: linear-gradient(to top, rgb(216, 207, 207), transparent);
   margin: 30px;
 }
@@ -204,22 +244,24 @@
   background: url(../multimedia/imagenes/1366_2000.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border: 2px solid #000;
 }
-.backg-img .background-overlay-1 {
+
+.background-overlay-1 {
   background: rgba(0, 0, 0, 0.706);
   height: 550px;
 }
-.backg-img .background-overlay-1 .article__naked {
+.background-overlay-1 .article__naked {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px;
 }
 @media only screen and (max-width: 500px) {
-  .backg-img .background-overlay-1 .article__naked {
+  .background-overlay-1 .article__naked {
     display: block;
   }
 }
-.backg-img .background-overlay-1 .article__naked .article__naked-h2 {
+.background-overlay-1 .article__naked .article__naked-h2 {
   color: #fff;
   background-color: #000;
   text-align: center;
@@ -227,7 +269,7 @@
   grid-column: 1/3;
   grid-row: 1/2;
 }
-.backg-img .background-overlay-1 .article__naked .article__naked-p {
+.background-overlay-1 .article__naked .article__naked-p {
   color: #fff;
   text-align: center;
   font-size: 1.9vw;
@@ -235,11 +277,11 @@
   grid-row: 1/4;
 }
 @media only screen and (max-width: 500px) {
-  .backg-img .background-overlay-1 .article__naked .article__naked-p {
+  .background-overlay-1 .article__naked .article__naked-p {
     font-size: 4vw;
   }
 }
-.backg-img .background-overlay-1 .article__naked .article__naked-iframe {
+.background-overlay-1 .article__naked .article__naked-iframe {
   width: 100%;
   grid-column: 1/3;
   grid-row: 2/3;
@@ -247,9 +289,10 @@
 }
 
 .backg-img_2 {
-  background: url(./multimedia/imagenes/ktmadventure.jpg);
+  background: url(../multimedia/imagenes/ktmadventure.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border: 2px solid #000;
 }
 .backg-img_2 .background-overlay-2 {
   background: rgba(110, 68, 6, 0.7);
@@ -288,9 +331,10 @@
 }
 
 .backg-img_3 {
-  background: url(./multimedia/imagenes/ktmsuperspot.jpg);
+  background: url(../multimedia/imagenes/ktmsuperspot.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border: 2px solid #000;
 }
 .backg-img_3 .background-overlay-3 {
   background: rgba(240, 130, 5, 0.705);
@@ -329,9 +373,10 @@
 }
 
 .backg-img_4 {
-  background: url(./multimedia/imagenes/croosfull.jpg);
+  background: url(../multimedia/imagenes/croosfull.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border: 2px solid #000;
 }
 .backg-img_4 .background-overlay-4 {
   background: rgba(5, 21, 240, 0.705);
@@ -370,7 +415,7 @@
 }
 
 .bg-img {
-  background: url(../multimedia/imagenes/backgroud.jpg);
+  background: url(../../multimedia/imagenes/backgroud.jpg);
   width: 100%;
   height: 100%;
   background-size: contain;

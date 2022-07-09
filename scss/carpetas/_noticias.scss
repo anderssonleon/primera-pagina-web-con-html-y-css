@@ -1,4 +1,6 @@
 /*noticas*/
+@import '../base/extends.scss';
+
 .h1__noticia{
     text-align: center;
     padding: 30px;
@@ -46,7 +48,7 @@
         flex-direction:column;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid #000;
+        @extend %border-notice;
         background:linear-gradient(to bottom,#fff,transparent);
         padding: 50px;
         margin: 30px;
@@ -69,7 +71,7 @@
         flex-direction:column;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid #000;
+        @extend %border-notice;
         background:linear-gradient(to top,#fff,transparent);
         padding: 50px;
         margin: 30px;
@@ -92,7 +94,7 @@
         flex-direction:column;
         justify-content: space-around;
         align-items: center;
-        border: 2px solid #000;
+        @extend %border-notice;
         padding: 50px;
         margin: 30px;
         .article__p4{
@@ -115,7 +117,7 @@
         flex-direction:column;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid #000;
+        @extend %border-notice;
         background:linear-gradient(to top,rgb(216, 207, 207),transparent);
         margin: 30px;
     }
