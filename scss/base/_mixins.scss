@@ -1,3 +1,5 @@
+/*utilizado en modelos.html en las clases .backg-img */
+
 @mixin background ($valor, $valor2) {
     background-repeat:$valor;
     background-size:$valor2;
