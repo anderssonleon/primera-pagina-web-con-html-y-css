@@ -2,11 +2,7 @@
 @import '../base/extends.scss';
 
 .h1__noticia{
-    text-align: center;
-    padding: 30px;
-    font-size: 80px;
-    color: #f75f07;
-    background: #000;
+   @extend %noticias-propit;
 }
 .container__gird{
     display: grid;

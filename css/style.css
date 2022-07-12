@@ -3,6 +3,7 @@
 }
 
 /*nav*/
+/*utlizados en home en la clase.background-overlay */
 .bg-col {
   background: #000;
   box-shadow: 2px 2px 5px #002;
@@ -40,7 +41,7 @@
 .main-header {
   background: url(../multimedia/imagenes/backgroud.jpg);
   background-size: cover;
-  min-height: 600px;
+  min-height: auto;
   /*MAPS GET*/
 }
 .main-header .location-fa i {
@@ -110,7 +111,7 @@
   height: 500px;
 }
 
-/*noticas*/
+/*noticas*/ /*utizado el seccion noticias.html .article1,2,3,4,5*/
 .container__gird .article__5, .container__gird .article__4, .container__gird .article__3, .container__gird .article__2 {
   border: 1px solid #000;
   border-radius: 2%;
@@ -239,7 +240,13 @@
   border: 3px solid #fff;
 }
 
-/*MODELOSS*/
+/*MODELOSS*/ /*utilizado en modelos.html en las clases .backg-img */
+.carousel__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .backg-img {
   background: url(../multimedia/imagenes/1366_2000.jpg);
   background-repeat: no-repeat;
@@ -343,7 +350,7 @@
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 200px 200px 100px;
 }
 .backg-img_3 .background-overlay-3 .article__supersport .article__supersport-h2 {
   color: hsl(24deg, 100%, 50%);
@@ -358,7 +365,7 @@
   font-size: 1.9vw;
   padding: 10px;
   grid-column: 1/3;
-  grid-row: 2/3;
+  grid-row: 2/4;
 }
 @media only screen and (max-width: 500px) {
   .backg-img_3 .background-overlay-3 .article__supersport .article__supersport-p {
