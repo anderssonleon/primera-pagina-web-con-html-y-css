@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    .responsive_img{
+        @media only screen and (max-width:500px){
+               width: 100%;
+        }
+    }
 }
 .backg-img{
     background: url(../multimedia/imagenes/1366_2000.jpg);

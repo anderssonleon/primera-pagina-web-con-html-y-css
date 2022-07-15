@@ -246,6 +246,11 @@
   align-items: center;
   flex-direction: column;
 }
+@media only screen and (max-width: 500px) {
+  .carousel__content .responsive_img {
+    width: 100%;
+  }
+}
 
 .backg-img {
   background: url(../multimedia/imagenes/1366_2000.jpg);
@@ -432,25 +437,50 @@
   background: rgba(105, 105, 105, 0.3);
 }
 
-footer {
-  border: 2px solid #f75f07;
+.p__footer {
+  font-size: 1vw;
+  text-align: center;
+  padding: 1em;
   margin-top: 30px;
+  border-top: 2px dotted #615f5e;
+  color: #615f5e;
 }
-footer .p-footer {
-  color: #f75f07;
-  font-size: 2.5vw;
+
+.bg-color {
+  background-color: black;
+  border-top: 2px solid rgb(253, 104, 4);
 }
-footer .text-decoration {
-  text-decoration: none;
-  text-transform: uppercase;
+.bg-color .footer__ul-redes {
+  list-style: none;
+}
+.bg-color .footer__ul-redes .footer__li-redes {
+  margin: 10px;
+}
+.bg-color .footer__ul-redes .footer__li-redes a {
+  font-size: 20px;
   color: #fff;
-  font-size: 30px;
+  margin: 10px;
+  text-decoration: none;
 }
-footer .text-decoration:hover {
-  color: #f75f07;
+.bg-color .footer__ul-redes .footer__li-redes a:hover {
+  color: #555;
 }
-footer .text-decoration .text-decoration i {
-  font-size: 2vw;
+.bg-color .derechos__container span {
+  display: none;
+  background-color: rgb(248, 126, 12);
+  color: #000;
+  border-radius: 2px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.bg-color .derechos__container {
+  margin: 20px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 2s;
+}
+.bg-color .derechos__container:hover > span {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
