@@ -3,108 +3,168 @@
 
 @import '../base/mapas';
 
-    .bg-col{
-        background:#000;
-        box-shadow: 2px 2px 5px #002;
+.bg__home{
+       background-color: rgb(245, 245, 245);
+}
+.bg-col{
+    background:#000;
+    box-shadow: 2px 2px 5px #002;
+}
+.nav-a{
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 20px;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition:.5s;
+    @media only screen and(max-width:980px){
+            font-size: 20px;
     }
-    .nav-a{
-        display: block;
-        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-        font-size: 20px;
-        font-weight: var(--bs-nav-link-font-weight);
-        color: #fff;
-        text-decoration: none;
-        margin-left: 30px;
-        transition:.5s;
-        @media only screen and(max-width:980px){
-                font-size: 20px;
-        }
-        &:hover{
-            color: #ff7504;
-        }
+    &:hover{
+        color: #ff7504;
+    }
 }
 #button {
-    background-color: #f75f07;
+background-color: #f75f07;
+}
+
+/*header*/
+.main-header{
+background: url(../multimedia/imagenes/backgroud.jpg);
+background-size:cover;
+min-height: auto;
+.location-fa i{
+    position:fixed;
+    font-size: 50px;
+    color:rgba(71, 78, 85, 0.7);
+    transition: .2;
+    &:hover{
+        color: #000;
+    }
+ }
+ /*MAPS GET*/
+.background-overlay{
+    background:map-get($standard , bg-standard);
+    min-height: 600px;
+    box-shadow: map-get($standard , bx-shadow);
+             
+}
+.container__animation{
+    animation:photoText 4s 1;
+    @keyframes photoText{
+        0%{
+            transform:translateX(-100%);
+            opacity: .1;
+         }            
+
+         100%{
+            transform:translateX(0%);
+            opacity: .9;
+         }
+     }
+}
+.h1__bg{
+    color: #000;
+}
+.video__header{
+     width:500px;
+     border-radius: 10%;
+     border:2px solid #000;
+     box-shadow: 5px 5px 10px 10px #000;
+     animation:photoBiker 4s 1;
+     @keyframes photoBiker{
+        0%{
+            transform:translateX(-100%);
+            opacity: .1;
+         }            
+
+         100%{
+            transform:translateX(0%);
+            opacity: .9;
+         }
+     }
+}
+
 }
 .img__nav{
     width:70px;
     height: 70px;
-
 }
-/*header*/
-.main-header{
-    background: url(../multimedia/imagenes/backgroud.jpg);
-    background-size:cover;
-    min-height: auto;
-    .location-fa i{
-        position:fixed;
-        font-size: 50px;
-        color:rgba(71, 78, 85, 0.7);
-        transition: .2;
-        &:hover{
-            color: #000;
-        }
-     }
-     /*MAPS GET*/
-    .background-overlay{
-        background:map-get($standard , bg-standard);
-        min-height: 600px;
-        box-shadow: map-get($standard , bx-shadow);
-                 
-    }
-    .container__animation{
-        animation:photoText 4s 1;
-        @keyframes photoText{
-            0%{
-                transform:translateX(-100%);
-                opacity: .1;
-             }            
 
-             100%{
-                transform:translateX(0%);
-                opacity: .9;
-             }
-         }
-    }
-    .h1__bg{
-        color: #000;
-    }
-    .img__header{
-         width:500px;
-         border-radius: 10%;
-         border:2px solid #000;
-         animation:photoBiker 4s 1;
-         @keyframes photoBiker{
-            0%{
-                transform:translateX(-100%);
-                opacity: .1;
-             }            
-
-             100%{
-                transform:translateX(0%);
-                opacity: .9;
-             }
-         }
-    }
-}
-/*contenido*/
-.title__h2{
-    text-align: center;
-    width: 100%;
-    margin: 10px 0 40px 0;
-    background-color:#000000d5;
-    .title__h2-container{
-        box-sizing: border-box;
-        color:  #f75f07;
-        font-size:3vw;
-        width: 100%;
-        padding: 10px;
-    }
-}
 
 .carousel-inner{
     .img__carousel{
         width: 700px;
-        height: 500px;
+        height: 450px;
     }
+}
+.container__1{
+    padding: 0;
+   .video2__container{
+    background:linear-gradient(to bottom,#000, transparent );
+   } 
+   .img1__container{
+    background:linear-gradient(to bottom,#000, transparent );
+   }
+
+}
+.container__2{
+    background:linear-gradient(to left,rgb(95, 94, 94), transparent );
+
+}
+/*animation*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.container-animation {
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10em 'Montserrat';
+    width: 100%;
+    height: 200px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #ff6600;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #ff7300;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #aa4604;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #962f00;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #f87801;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }

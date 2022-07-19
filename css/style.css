@@ -1,9 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 * {
   font-family: "Anton", sans-serif;
 }
 
 /*nav*/
 /*utlizados en home en la clase.background-overlay */
+.bg__home {
+  background-color: rgb(245, 245, 245);
+}
+
 .bg-col {
   background: #000;
   box-shadow: 2px 2px 5px #002;
@@ -30,11 +35,6 @@
 
 #button {
   background-color: #f75f07;
-}
-
-.img__nav {
-  width: 70px;
-  height: 70px;
 }
 
 /*header*/
@@ -74,10 +74,11 @@
 .main-header .h1__bg {
   color: #000;
 }
-.main-header .img__header {
+.main-header .video__header {
   width: 500px;
   border-radius: 10%;
   border: 2px solid #000;
+  box-shadow: 5px 5px 10px 10px #000;
   animation: photoBiker 4s 1;
 }
 @keyframes photoBiker {
@@ -91,26 +92,84 @@
   }
 }
 
-/*contenido*/
-.title__h2 {
-  text-align: center;
-  width: 100%;
-  margin: 10px 0 40px 0;
-  background-color: rgba(0, 0, 0, 0.8352941176);
-}
-.title__h2 .title__h2-container {
-  box-sizing: border-box;
-  color: #f75f07;
-  font-size: 3vw;
-  width: 100%;
-  padding: 10px;
+.img__nav {
+  width: 70px;
+  height: 70px;
 }
 
 .carousel-inner .img__carousel {
   width: 700px;
-  height: 500px;
+  height: 450px;
 }
 
+.container__1 {
+  padding: 0;
+}
+.container__1 .video2__container {
+  background: linear-gradient(to bottom, #000, transparent);
+}
+.container__1 .img1__container {
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
+.container__2 {
+  background: linear-gradient(to left, rgb(95, 94, 94), transparent);
+}
+
+/*animation*/
+.container-animation {
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+svg {
+  display: block;
+  font: 10em "Montserrat";
+  width: 100%;
+  height: 200px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #ff6600;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #ff7300;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #aa4604;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #962f00;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #f87801;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
 /*noticas*/ /*utizado el seccion noticias.html .article1,2,3,4,5*/
 .container__gird .article__5, .container__gird .article__4, .container__gird .article__3, .container__gird .article__2 {
   border: 1px solid #000;
@@ -426,15 +485,11 @@
   grid-row: 2/4;
 }
 
-.bg-img {
-  background: url(../../multimedia/imagenes/backgroud.jpg);
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: space;
-}
-.bg-img .bg-color {
-  background: rgba(105, 105, 105, 0.3);
+.bg-accesorios {
+  background-color: rgba(240, 248, 255, 0.6);
+  background-image: url(../multimedia/imagenes/adventurefull.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .p__footer {
@@ -448,39 +503,31 @@
 
 .bg-color {
   background-color: black;
-  border-top: 2px solid rgb(253, 104, 4);
+  border-top: 2px solid rgb(252, 104, 5);
 }
 .bg-color .footer__ul-redes {
   list-style: none;
-}
-.bg-color .footer__ul-redes .footer__li-redes {
-  margin: 10px;
+  font-size: 3em;
+  color: #fff;
+  border-right: 1px solid #fff;
 }
 .bg-color .footer__ul-redes .footer__li-redes a {
-  font-size: 20px;
-  color: #fff;
-  margin: 10px;
+  font-size: 0.4em;
+  color: rgba(255, 255, 255, 0.747);
   text-decoration: none;
 }
 .bg-color .footer__ul-redes .footer__li-redes a:hover {
-  color: #555;
+  color: rgb(253, 115, 2);
 }
-.bg-color .derechos__container span {
-  display: none;
-  background-color: rgb(248, 126, 12);
-  color: #000;
-  border-radius: 2px;
-  border: 2px solid rgb(0, 0, 0);
-}
-.bg-color .derechos__container {
-  margin: 20px;
-  font-size: 20px;
+.bg-color .footer__ul-location {
+  list-style: none;
+  font-size: 3em;
   color: #fff;
-  text-decoration: none;
-  transition: 2s;
 }
-.bg-color .derechos__container:hover > span {
-  display: block;
+.bg-color .footer__ul-location .footer__li-location a {
+  font-size: 0.5em;
+  color: rgba(255, 255, 255, 0.747);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
