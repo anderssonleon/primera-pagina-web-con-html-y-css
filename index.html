@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <header>
+    <header class="bg__home">
         <nav class="navbar navbar-expand-lg bg-col">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img class="img__nav" src="multimedia/imagenes/ktmlogo.jpg" alt="logo"></a>
@@ -44,8 +44,7 @@
               </div>
             </div>
           </nav>
-        <header class="main-header">
-          <span class="location-fa"><a href="https://www.google.com/maps/search/ktm+concesionario/@-34.6139295,-58.4672092,12z/data=!3m1!4b1" target="_blank"><i class="fas fa-map"></i></a></span>
+        <div class="main-header">
            <div class="background-overlay text-white py-5">
                  <div class="container">
                   <div class="row">
@@ -55,22 +54,38 @@
                        <a href="./carpetas/noticias.html" class="btn btn-outline-secundary btn-lg text-white">conocenos</a>
                     </div>
                     <div class="col-md-6 div__img">
-                      <img src="./multimedia/imagenes/superduke.jpg" alt="ktm sport" class="img__header img-fulid d-none d-sm-block" >
-                    </div>
+                      <video src="multimedia/KTM 250 DUKE - One of a kind _ KTM.mp4" class="video__header img-fulid d-none d-sm-block" autoplay muted loop></video>                      
                   </div>
                  </div>
-           </div>
+                  </div>
+                </div>
         </header>
-      <div class="container-fluid my-2 ">
+      <div class="container-fluid my-2 container__1">
         <div class="row">
-          <img class="col-sm-6" src="./multimedia/imagenes/ktmlogo20.png" alt="logo de ktm">
-          <video class="col-sm-6" src="./multimedia/KTM presents the 1290 SUPER DUKE R Prototype _ KTM (1).mp4" title="ktm1290" autoplay muted></video>
+          <img class="col-sm-6 img1__container" src="./multimedia/imagenes/ktmlogo20.png" alt="logo de ktm">
+
+          <video class="col-sm-6 video2__container" src="./multimedia/KTM presents the 1290 SUPER DUKE R Prototype _ KTM (1).mp4" title="ktm1290" autoplay muted loop></video>
         </div>
-        <div class="title__h2">
-          <h2 class="title__h2-container">ELIGE TU ESTILO !</h2> 
       </div>
+
+      <div class="container-animation">
+        <svg viewBox="0 0 960 300">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">ELIGE TU ESTILO!</text>
+          </symbol>
+      
+          <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
       </div>
- <section class="container-fluid my-4">
+
+
+ <section class="container-fluid my-4 container__2">
           <div class="row">
             <div class="col text-center justify-content-center align-self-center">
               <h2 class="container text-align-center">
@@ -130,24 +145,26 @@
         Determinadas características de los vehículos que aparecen en las imágenes pueden variar con respecto a los modelos de serie, y algunas imágenes muestran equipamiento opcional, disponible por un coste adicional. 
       </p>
    <section class="d-flex justify-content-start bg-color">
-        <ul class="footer__ul-redes w-50">
+        <ul class="footer__ul-redes w-100">
+          NUESTRAS REDES
           <li class="footer__li-redes"><a href="">Instagram</a></li>
           <li class="footer__li-redes"><a href="">Facebook</a></li>
           <li class="footer__li-redes"><a href="">Twitter</a></li>
           <li class="footer__li-redes"><a href="">Email</a></li>
        </ul>
 
-        <ul class="w-50 footer__ul-redes">
-            <li class="footer__li-redes"><a href="https://www.google.com/maps/search/ktm+concesionario/@-34.6138895,-58.4672093,12z/data=!3m1!4b1">agecias</a></li>
-            <li class="derechos__container"> 
-              Derechos
-            <span>
-              todos los derechos y las imagenes que se muestran son ilustrativas y descargadas de internet
-           </span>
+        <ul class="w-100 footer__ul-location">
+             UBICANOS
+            <li class="footer__li-location"><a href="https://www.google.com/maps/search/ktm+concesionario/@-34.6138895,-58.4672093,12z/data=!3m1!4b1">NUESTROS LOCALES!</a>
+            </li>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52550.13610215325!2d-58.48811030387878!3d-34.59446264607527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9cf8876b6b%3A0x2dfae00350799a30!2sKTM%20Palermo!5e0!3m2!1ses-419!2sar!4v1658201939575!5m2!1ses-419!2sar" width="90%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
           </li>
         </ul>
    </section>
  </footer>
+ 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
