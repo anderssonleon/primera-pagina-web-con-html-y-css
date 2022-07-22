@@ -1,6 +1,8 @@
 /*noticas*/
 @import '../base/extends.scss';
-
+.bg__noticias{
+    background-image: linear-gradient(#000, #555, #777);
+}
 .h1__noticia{
    @extend %noticias-propit;
 }
@@ -22,9 +24,8 @@
         flex-direction:row;
         justify-content: center;
         align-items: center;
-        background:linear-gradient(to left,#fff,transparent);
         margin: 30px;
-            
+        background: #fff;    
         
         .article__p1{
                  font-size:1em;
@@ -45,9 +46,9 @@
         justify-content: space-around;
         align-items: center;
         @extend %border-notice;
-        background:linear-gradient(to bottom,#fff,transparent);
         padding: 50px;
         margin: 30px;
+        background: #fff;  
         .article__p2{
             font-size:1em;
             margin: 10px;
@@ -68,9 +69,9 @@
         justify-content: space-around;
         align-items: center;
         @extend %border-notice;
-        background:linear-gradient(to top,#fff,transparent);
         padding: 50px;
         margin: 30px;
+        background: #fff;  
         .article__p3{
             font-size: 1em;
             margin: 10px;
@@ -93,9 +94,10 @@
         @extend %border-notice;
         padding: 50px;
         margin: 30px;
+        background: #fff;  
         .article__p4{
-            color: #d30000;
-            font-size: 2em;
+            color: #772121;
+            font-size: 1.7em;
         
         }
         .img__article-4{
@@ -114,8 +116,8 @@
         justify-content: space-around;
         align-items: center;
         @extend %border-notice;
-        background:linear-gradient(to top,rgb(216, 207, 207),transparent);
         margin: 30px;
+        background: #fff;  
     }
     .article__p5{
         font-size:2em;
