@@ -97,6 +97,9 @@
             display:grid;
             grid-template-columns:1fr 1fr 1fr 1fr;
             grid-template-rows:200px 200px ;
+            @media only screen and (max-width:500px){
+                display: block;
+            }
             .article__adventure-h2{
                 background-color: #000;
                 text-align: center;
@@ -138,6 +141,9 @@
             display:grid;
             grid-template-columns:1fr 1fr 1fr 1fr ;
             grid-template-rows:200px 200px 100px;
+            @media only screen and (max-width:500px){
+                display: block;
+            }
             .article__supersport-h2{
                 color: hsl(24, 100%, 50%);
                 background-color: #000;
@@ -168,6 +174,7 @@
     
     }
 }
+
 .backg-img_4{
     background: url(../multimedia/imagenes/croosfull.jpg);
     @include background(no-repeat, 100% 100%);
@@ -178,6 +185,9 @@
             display:grid;
             grid-template-columns:1fr 1fr 1fr 1fr ;
             grid-template-rows:200px 200px 200px;
+            @media only screen and (max-width:500px){
+                display: block;
+            }
             .article__enduro-h2{
                 color: hwb(241 0% 0%);
                 background-color: #000;

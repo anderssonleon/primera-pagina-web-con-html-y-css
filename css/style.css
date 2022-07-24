@@ -435,6 +435,11 @@ svg {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px;
 }
+@media only screen and (max-width: 500px) {
+  .backg-img_2 .background-overlay-2 .article__adventure {
+    display: block;
+  }
+}
 .backg-img_2 .background-overlay-2 .article__adventure .article__adventure-h2 {
   background-color: #000;
   text-align: center;
@@ -477,6 +482,11 @@ svg {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 100px;
 }
+@media only screen and (max-width: 500px) {
+  .backg-img_3 .background-overlay-3 .article__supersport {
+    display: block;
+  }
+}
 .backg-img_3 .background-overlay-3 .article__supersport .article__supersport-h2 {
   color: hsl(24deg, 100%, 50%);
   background-color: #000;
@@ -518,6 +528,11 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px;
+}
+@media only screen and (max-width: 500px) {
+  .backg-img_4 .background-overlay-4 .article__enduro {
+    display: block;
+  }
 }
 .backg-img_4 .background-overlay-4 .article__enduro .article__enduro-h2 {
   color: hwb(241 0% 0%);
@@ -565,6 +580,7 @@ svg {
 }
 
 .bg-color {
+  width: 100%;
   background-color: black;
   border-top: 2px solid rgb(252, 104, 5);
 }
