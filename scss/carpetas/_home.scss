@@ -8,7 +8,7 @@
 }
 .bg-col{
     background:#000;
-    box-shadow: 2px 2px 5px #002;
+    box-shadow: 2px 2px 5px #000;
 }
 .nav-a{
     display: block;
@@ -111,7 +111,8 @@ min-height: auto;
 
 }
 .container__2{
-    background:linear-gradient(to left,rgb(95, 94, 94), transparent );
+    background:linear-gradient(to left,rgb(214, 209, 209), transparent );
+    box-shadow: 2px 2px 2px 7px #000;
 
 }
 /*animation*/
