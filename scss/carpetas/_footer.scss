@@ -13,7 +13,7 @@
     border-top: 2px solid rgb(252, 104, 5);
     .footer__ul-redes{
         list-style: none;
-        font-size: 3em;
+        font-size: 6vw;
         color: #fff;
         border-right: 1px solid #fff;
 
@@ -28,11 +28,12 @@
     }
     .footer__ul-location{
         list-style: none;
-        font-size: 3em;
+        font-size: 6vw;
         color: #fff;
         .footer__li-location a{
-            font-size:.5em;
-            color: rgba(255, 255, 255, 0.747);
+            margin-top: 20px;
+            font-size:8vw;
+            color: #ff4800c7;
             text-decoration: none;
 
         }

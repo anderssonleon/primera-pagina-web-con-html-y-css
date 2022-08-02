@@ -586,7 +586,7 @@ svg {
 }
 .bg-color .footer__ul-redes {
   list-style: none;
-  font-size: 3em;
+  font-size: 6vw;
   color: #fff;
   border-right: 1px solid #fff;
 }
@@ -600,12 +600,13 @@ svg {
 }
 .bg-color .footer__ul-location {
   list-style: none;
-  font-size: 3em;
+  font-size: 6vw;
   color: #fff;
 }
 .bg-color .footer__ul-location .footer__li-location a {
-  font-size: 0.5em;
-  color: rgba(255, 255, 255, 0.747);
+  margin-top: 20px;
+  font-size: 8vw;
+  color: rgba(255, 72, 0, 0.7803921569);
   text-decoration: none;
 }
 
